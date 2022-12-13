@@ -9,6 +9,8 @@ public class Pizza {
     protected boolean extraTopping = false;
     protected boolean takeAway = false;
 
+    boolean printed = false;
+
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
 
@@ -61,6 +63,10 @@ public class Pizza {
 
     public String getBill(){
 
+        if(printed==false){
+
+            printed=true;
+
         if(extraCheese==true){
             bill+="Extra Cheese Added: 80\n";
         }
@@ -78,6 +84,8 @@ public class Pizza {
         }
 
         bill+="Total Price: "+price+"\n";
+
+        }
         // your code goes here
         return bill;
     }
