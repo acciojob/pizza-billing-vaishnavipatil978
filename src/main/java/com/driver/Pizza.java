@@ -77,7 +77,7 @@ public class Pizza {
             bill+="Paperbag Added: 20 \n";
         }
 
-        bill+="Total Price: "+price;
+        bill+="Total Price: "+price+"\n";
         // your code goes here
         return bill;
     }
