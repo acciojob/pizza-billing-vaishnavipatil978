@@ -62,19 +62,19 @@ public class Pizza {
     public String getBill(){
 
         if(extraCheese==true){
-            bill+="Extra Cheese Added: 80 \n";
+            bill+="Extra Cheese Added: 80\n";
         }
         if(extraTopping==true){
             if(isVeg==true) {
-                bill += "Extra Toppings Added: 70 \n";
+                bill += "Extra Toppings Added: 70\n";
             }
             else{
-                bill+="Extra Toppings Added: 120 \n";
+                bill+="Extra Toppings Added: 120\n";
             }
         }
 
         if(takeAway==true){
-            bill+="Paperbag Added: 20 \n";
+            bill+="Paperbag Added: 20\n";
         }
 
         bill+="Total Price: "+price+"\n";
